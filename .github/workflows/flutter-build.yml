@@ -87,11 +87,6 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
-      - name: Use PAT for submodules
-        run: |
-          git config --global --unset-all url."https://github.com/" || true
-          git config --system url."https://${{ secrets.PAT }}:@github.com/".insteadOf "https://github.com/"
-     
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
