@@ -1,3 +1,4 @@
 [submodule "libs/hbb_common"]
 	path = libs/hbb_common
-	url = git@github.com:skycn3322/hbb_common.git
+	url = https://github.com/skycn3322/hbb_common.git
+

@@ -91,8 +91,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Restore bridge files
         uses: actions/download-artifact@master
@@ -314,8 +314,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Install LLVM and Clang
         uses: rustdesk-org/install-llvm-action-32bit@master
@@ -466,8 +466,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -593,8 +593,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Import the codesign cert
         if: env.MACOS_P12_BASE64 != null
@@ -908,8 +908,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1182,8 +1182,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1349,8 +1349,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Set Swap Space
         if: ${{ matrix.job.arch == 'x86_64' }}
@@ -1681,8 +1681,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Modify vcpkg.json for armv7
         if: matrix.job.vcpkg-triplet == 'arm-linux'
@@ -1885,8 +1885,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -1960,8 +1960,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -2023,8 +2023,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          ssh-key: ${{ secrets.SUBMODULE_KEY }}
-          ssh-strict: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Prepare env
         run: |
