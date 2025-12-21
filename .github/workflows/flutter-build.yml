@@ -313,8 +313,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Install LLVM and Clang
         uses: rustdesk-org/install-llvm-action-32bit@master
@@ -465,8 +464,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -592,8 +590,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Import the codesign cert
         if: env.MACOS_P12_BASE64 != null
@@ -907,8 +904,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1181,8 +1177,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1348,8 +1343,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Set Swap Space
         if: ${{ matrix.job.arch == 'x86_64' }}
@@ -1680,8 +1674,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Modify vcpkg.json for armv7
         if: matrix.job.vcpkg-triplet == 'arm-linux'
@@ -1884,8 +1877,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -1959,8 +1951,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -2022,8 +2013,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
+          fetch-depth: 1
 
       - name: Prepare env
         run: |
