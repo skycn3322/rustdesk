@@ -29,6 +29,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Install prerequisites
         run: |

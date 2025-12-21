@@ -92,6 +92,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Restore bridge files
         uses: actions/download-artifact@master
@@ -314,6 +315,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Install LLVM and Clang
         uses: rustdesk-org/install-llvm-action-32bit@master
@@ -465,6 +467,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -591,6 +594,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Import the codesign cert
         if: env.MACOS_P12_BASE64 != null
@@ -905,6 +909,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1178,6 +1183,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Install flutter
         uses: subosito/flutter-action@v2
@@ -1344,6 +1350,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Set Swap Space
         if: ${{ matrix.job.arch == 'x86_64' }}
@@ -1675,6 +1682,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Modify vcpkg.json for armv7
         if: matrix.job.vcpkg-triplet == 'arm-linux'
@@ -1878,6 +1886,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -1952,6 +1961,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Download Binary
         uses: actions/download-artifact@master
@@ -2014,6 +2024,7 @@ jobs:
         with:
           submodules: recursive
           ssh-key: ${{ secrets.SUBMODULE_KEY }}
+          ssh-strict: false
 
       - name: Prepare env
         run: |
