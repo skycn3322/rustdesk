@@ -1,4 +1,4 @@
-// 24FPS (actually 23.976FPS) is what video professionals ages ago determined to be the
+﻿// 24FPS (actually 23.976FPS) is what video professionals ages ago determined to be the
 // slowest playback rate that still looks smooth enough to feel real.
 // Our eyes can see a slight difference and even though 30FPS actually shows
 // more information and is more realistic.
@@ -1417,3 +1417,4 @@ fn handle_screenshot(screenshot: Screenshot, msg: String, w: usize, h: usize, da
         log::error!("Failed to send screenshot, {}", e);
     }
 }
+

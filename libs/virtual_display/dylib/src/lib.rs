@@ -1,4 +1,4 @@
-#[cfg(windows)]
+﻿#[cfg(windows)]
 pub mod win10;
 use hbb_common::ResultType;
 #[cfg(windows)]
@@ -189,3 +189,4 @@ pub fn update_monitor_modes(
     }
     Ok(())
 }
+

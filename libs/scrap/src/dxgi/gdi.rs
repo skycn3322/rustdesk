@@ -1,4 +1,4 @@
-use std::mem::size_of;
+﻿use std::mem::size_of;
 use winapi::{
     shared::windef::{HBITMAP, HDC},
     um::wingdi::{
@@ -211,3 +211,4 @@ mod tests {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-use super::*;
+﻿use super::*;
 use hbb_common::{
     anyhow::{anyhow, Context, Result},
     compress,
@@ -1134,3 +1134,4 @@ impl TerminalServiceProxy {
         }
     }
 }
+

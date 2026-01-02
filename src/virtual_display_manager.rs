@@ -1,4 +1,4 @@
-use hbb_common::{bail, platform::windows::is_windows_version_or_greater, ResultType};
+﻿use hbb_common::{bail, platform::windows::is_windows_version_or_greater, ResultType};
 
 // This string is defined here.
 //  https://github.com/rustdesk-org/RustDeskIddDriver/blob/b370aad3f50028b039aad211df60c8051c4a64d6/RustDeskIddDriver/RustDeskIddDriver.inf#LL73C1-L73C40
@@ -923,3 +923,4 @@ mod windows {
         display_drivers
     }
 }
+

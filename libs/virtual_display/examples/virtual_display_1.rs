@@ -1,4 +1,4 @@
-use std::io::{self, Read};
+﻿use std::io::{self, Read};
 #[cfg(windows)]
 use virtual_display;
 
@@ -100,3 +100,4 @@ fn main() {
 
 #[cfg(not(windows))]
 fn main() {}
+

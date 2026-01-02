@@ -1,4 +1,4 @@
-use std::{io, mem, ptr, slice};
+﻿use std::{io, mem, ptr, slice};
 pub mod gdi;
 pub use gdi::CapturerGDI;
 pub mod mag;
@@ -882,3 +882,4 @@ struct Rotate {
     video_processor: ComPtr<ID3D11VideoProcessor>,
     texture: (ComPtr<ID3D11Texture2D>, bool),
 }
+

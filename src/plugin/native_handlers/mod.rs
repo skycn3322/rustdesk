@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     ffi::c_void,
     sync::{Arc, RwLock},
     vec,
@@ -124,3 +124,4 @@ impl Callable for PluginNativeHandlerRegistrar {
         None
     }
 }
+

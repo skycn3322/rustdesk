@@ -1,4 +1,4 @@
-#[cfg(windows)]
+﻿#[cfg(windows)]
 fn build_windows() {
     let file = "src/platform/windows.cc";
     let file2 = "src/platform/windows_delete_test_cert.cc";
@@ -92,3 +92,4 @@ fn main() {
     }
     println!("cargo:rerun-if-changed=build.rs");
 }
+

@@ -1,4 +1,4 @@
-use hbb_common::{anyhow, dlopen::symbor::Library, log, ResultType};
+﻿use hbb_common::{anyhow, dlopen::symbor::Library, log, ResultType};
 use std::{
     collections::HashSet,
     sync::{Arc, Mutex},
@@ -194,3 +194,4 @@ pub fn update_monitor_modes(monitor_index: u32, modes: &[MonitorMode]) -> Result
         .ok_or(anyhow::Error::msg("update_monitor_modes method not found"))?;
     f(monitor_index, modes.len() as _, modes.as_ptr() as _)
 }
+

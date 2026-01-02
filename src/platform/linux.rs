@@ -1,4 +1,4 @@
-use super::{gtk_sudo, CursorData, ResultType};
+﻿use super::{gtk_sudo, CursorData, ResultType};
 use desktop::Desktop;
 use hbb_common::config::keys::OPTION_ALLOW_LINUX_HEADLESS;
 pub use hbb_common::platform::linux::*;
@@ -1882,3 +1882,4 @@ pub fn is_selinux_enforcing() -> bool {
         },
     }
 }
+

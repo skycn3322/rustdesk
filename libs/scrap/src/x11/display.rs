@@ -1,4 +1,4 @@
-use std::rc::Rc;
+﻿use std::rc::Rc;
 
 use super::ffi::*;
 use super::Server;
@@ -68,3 +68,4 @@ impl Display {
         self.pixfmt
     }
 }
+

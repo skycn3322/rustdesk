@@ -1,4 +1,4 @@
-use hbb_common::{anyhow::Error, bail, log, ResultType};
+﻿use hbb_common::{anyhow::Error, bail, log, ResultType};
 use ndk::media::media_codec::{MediaCodec, MediaCodecDirection, MediaFormat};
 use std::ops::Deref;
 use std::{
@@ -169,3 +169,4 @@ pub fn check_mediacodec() {
         // TODO encoders
     });
 }
+

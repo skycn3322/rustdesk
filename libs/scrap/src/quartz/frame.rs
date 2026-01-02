@@ -1,4 +1,4 @@
-use std::{ops, ptr, slice};
+﻿use std::{ops, ptr, slice};
 
 use super::ffi::*;
 
@@ -69,3 +69,4 @@ impl Drop for Frame {
         }
     }
 }
+

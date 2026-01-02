@@ -1,4 +1,4 @@
-use super::xdo::EnigoXdo;
+﻿use super::xdo::EnigoXdo;
 use crate::{Key, KeyboardControllable, MouseButton, MouseControllable, ResultType};
 use std::io::Read;
 use tfc::{traits::*, Context as TFC_Context, Key as TFC_Key};
@@ -376,3 +376,4 @@ fn test_key_seq() {
     let mut en = Enigo::new();
     en.key_sequence("^^");
 }
+

@@ -1,4 +1,4 @@
-use super::{
+﻿use super::{
     server::{Ripple, EVENT_PROXY},
     win_linux::{create_font_face, draw_text},
     Cursor, CustomEvent,
@@ -461,3 +461,4 @@ impl WindowState {
         Ok(())
     }
 }
+

@@ -1,4 +1,4 @@
-use crate::{Key, KeyboardControllable};
+﻿use crate::{Key, KeyboardControllable};
 use std::error::Error;
 use std::fmt;
 
@@ -182,3 +182,4 @@ mod tests {
         );
     }
 }
+

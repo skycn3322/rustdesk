@@ -1,4 +1,4 @@
-use reqwest::blocking::Response;
+﻿use reqwest::blocking::Response;
 use serde::de::DeserializeOwned;
 use serde_json::{Map, Value};
 
@@ -40,3 +40,4 @@ impl<T: DeserializeOwned> TryFrom<Response> for HbbHttpResponse<T> {
         }
     }
 }
+

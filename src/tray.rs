@@ -1,4 +1,4 @@
-use crate::client::translate;
+﻿use crate::client::translate;
 #[cfg(windows)]
 use crate::ipc::Data;
 #[cfg(windows)]
@@ -263,3 +263,4 @@ fn load_icon_from_asset() -> Option<image::DynamicImage> {
     }
     None
 }
+

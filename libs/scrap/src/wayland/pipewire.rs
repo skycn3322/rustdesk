@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+﻿use std::collections::HashMap;
 use std::error::Error;
 use std::os::unix::io::AsRawFd;
 use std::process::Command;
@@ -1526,3 +1526,4 @@ fn sort_streams(
     *streams = sorted_streams;
     *shared_displays = sorted_shared_displays;
 }
+

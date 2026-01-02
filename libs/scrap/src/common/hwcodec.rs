@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     codec::{base_bitrate, codec_thread_num, enable_hwcodec_option, EncoderApi, EncoderCfg},
     convert::*,
     CodecFormat, EncodeInput, ImageFormat, ImageRgb, Pixfmt, HW_STRIDE_ALIGN,
@@ -761,3 +761,4 @@ pub fn start_check_process() {
         std::thread::spawn(f);
     });
 }
+

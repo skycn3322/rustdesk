@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     platform::unix::{FileDescription, FileType, BLOCK_SIZE},
     send_data, ClipboardFile, CliprdrError, ProgressPercent,
 };
@@ -637,3 +637,4 @@ impl PasteTaskHandle {
         Ok(())
     }
 }
+

@@ -1,4 +1,4 @@
-use crate::ui_interface::get_option;
+﻿use crate::ui_interface::get_option;
 #[cfg(windows)]
 use crate::{
     display_service,
@@ -406,3 +406,4 @@ pub fn is_in_privacy_mode() -> bool {
         .map(|pm| pm.pre_conn_id() != INVALID_PRIVACY_MODE_CONN_ID)
         .unwrap_or(false)
 }
+

@@ -1,4 +1,4 @@
-// https://github.com/aarnt/qt-sudo
+﻿// https://github.com/aarnt/qt-sudo
 // Sometimes reboot is needed to refresh sudoers.
 
 use crate::lang::translate;
@@ -771,3 +771,4 @@ fn quote_shell_arg(arg: &str, add_splash_if_match: bool) -> String {
     }
     rv
 }
+

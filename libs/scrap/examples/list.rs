@@ -1,4 +1,4 @@
-extern crate scrap;
+﻿extern crate scrap;
 
 use scrap::Display;
 
@@ -14,3 +14,4 @@ fn main() {
         );
     }
 }
+

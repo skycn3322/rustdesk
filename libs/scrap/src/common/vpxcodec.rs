@@ -1,4 +1,4 @@
-// https://github.com/astraw/vpx-encode
+﻿// https://github.com/astraw/vpx-encode
 // https://github.com/astraw/env-libvpx-sys
 // https://github.com/rust-av/vpx-rs/blob/master/src/decoder.rs
 // https://github.com/chromium/chromium/blob/e7b24573bc2e06fed4749dd6b6abfce67f29052f/media/video/vpx_video_encoder.cc#L522
@@ -595,3 +595,4 @@ impl Drop for Image {
 }
 
 unsafe impl Send for vpx_codec_ctx_t {}
+

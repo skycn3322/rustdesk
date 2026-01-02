@@ -1,4 +1,4 @@
-use std::boxed::Box;
+﻿use std::boxed::Box;
 use std::error::Error;
 
 pub enum PixelProvider<'a> {
@@ -58,3 +58,4 @@ impl Clone for Box<dyn Capturable> {
         self.box_clone()
     }
 }
+

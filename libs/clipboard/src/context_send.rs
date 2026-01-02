@@ -1,4 +1,4 @@
-use hbb_common::{log, ResultType};
+﻿use hbb_common::{log, ResultType};
 use std::{ops::Deref, sync::Mutex};
 
 use crate::CliprdrServiceContext;
@@ -77,3 +77,4 @@ impl ContextSend {
         }
     }
 }
+

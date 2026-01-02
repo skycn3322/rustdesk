@@ -1,4 +1,4 @@
-#[cfg(target_os = "linux")]
+﻿#[cfg(target_os = "linux")]
 use crate::ipc::start_pa;
 use crate::ui_cm_interface::{start_ipc, ConnectionManager, InvokeUiCM};
 
@@ -183,3 +183,4 @@ impl sciter::EventHandler for SciterConnectionManager {
         fn hide_cm();
     }
 }
+

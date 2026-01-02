@@ -1,4 +1,4 @@
-use std::ptr;
+﻿use std::ptr;
 
 use block::{Block, ConcreteBlock};
 use hbb_common::libc::c_void;
@@ -109,3 +109,4 @@ impl Drop for Capturer {
         }
     }
 }
+

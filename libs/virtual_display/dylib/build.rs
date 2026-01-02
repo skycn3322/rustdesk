@@ -1,4 +1,4 @@
-use cc;
+﻿use cc;
 
 fn build_c_impl() {
     let mut build = cc::Build::new();
@@ -33,3 +33,4 @@ fn build_c_impl() {
 fn main() {
     build_c_impl();
 }
+

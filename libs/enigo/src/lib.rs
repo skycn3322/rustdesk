@@ -1,6 +1,6 @@
-//! Enigo lets you simulate mouse and keyboard input-events as if they were
+﻿//! Enigo lets you simulate mouse and keyboard input-events as if they were
 //! made by the actual hardware. The goal is to make it available on different
-//! operating systems like Linux, macOS and Windows – possibly many more but
+//! operating systems like Linux, macOS and Windows 鈥?possibly many more but
 //! [Redox](https://redox-os.org/) and *BSD are planned. Please see the
 //! [Repo](https://github.com/enigo-rs/enigo) for the current status.
 //!
@@ -194,7 +194,7 @@ pub trait MouseControllable {
     /// If the button was not pushed down or consecutive calls without
     /// invoking [mouse_down](trait.MouseControllable.html#tymethod.mouse_down)
     /// will emit lift up events. It depends on the
-    /// operating system whats actually happening – my guess is it will just
+    /// operating system whats actually happening 鈥?my guess is it will just
     /// get ignored.
     ///
     /// # Example
@@ -227,7 +227,7 @@ pub trait MouseControllable {
     ///
     /// Positive numbers for length lets the mouse wheel scroll to the right
     /// and negative ones to the left. The value that is specified translates
-    /// to `lines` defined by the operating system and is essentially one 15°
+    /// to `lines` defined by the operating system and is essentially one 15掳
     /// (click)rotation on the mouse wheel. How many lines it moves depends
     /// on the current setting in the operating system.
     ///
@@ -244,7 +244,7 @@ pub trait MouseControllable {
     ///
     /// Positive numbers for length lets the mouse wheel scroll down
     /// and negative ones up. The value that is specified translates
-    /// to `lines` defined by the operating system and is essentially one 15°
+    /// to `lines` defined by the operating system and is essentially one 15掳
     /// (click)rotation on the mouse wheel. How many lines it moves depends
     /// on the current setting in the operating system.
     ///
@@ -469,7 +469,7 @@ pub trait KeyboardControllable {
     ///
     /// Emits keystrokes such that the given string is inputted.
     ///
-    /// You can use many unicode here like: ❤️. This works
+    /// You can use many unicode here like: 鉂わ笍. This works
     /// regardless of the current keyboardlayout.
     ///
     /// # Example
@@ -477,7 +477,7 @@ pub trait KeyboardControllable {
     /// ```no_run
     /// use enigo::*;
     /// let mut enigo = Enigo::new();
-    /// enigo.key_sequence("hello world ❤️");
+    /// enigo.key_sequence("hello world 鉂わ笍");
     /// ```
     fn key_sequence(&mut self, sequence: &str);
 
@@ -550,3 +550,4 @@ mod tests {
         }
     }
 }
+

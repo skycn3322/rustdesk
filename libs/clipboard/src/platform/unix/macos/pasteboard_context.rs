@@ -1,4 +1,4 @@
-use super::{
+﻿use super::{
     item_data_provider::create_pasteboard_file_url_provider,
     paste_observer::PasteObserver,
     paste_task::{FileContentsResponse, PasteTask},
@@ -458,3 +458,4 @@ mod tests {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     wayland::{capturable::*, *},
     Frame, TraitCapturer,
 };
@@ -127,3 +127,4 @@ impl Display {
         "".to_owned()
     }
 }
+

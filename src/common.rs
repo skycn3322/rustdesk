@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     collections::HashMap,
     future::Future,
     net::{SocketAddr, ToSocketAddrs},
@@ -2429,3 +2429,4 @@ mod tests {
         assert!(!is_public("rustdesk.comhello.com"));
     }
 }
+

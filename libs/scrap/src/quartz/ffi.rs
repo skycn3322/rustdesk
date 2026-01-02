@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+﻿#![allow(dead_code)]
 
 use block::RcBlock;
 use hbb_common::libc::c_void;
@@ -239,3 +239,4 @@ extern "C" {
     pub fn CFRetain(cf: *const c_void);
     pub fn CFRelease(cf: *const c_void);
 }
+

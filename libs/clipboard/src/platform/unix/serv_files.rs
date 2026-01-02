@@ -1,4 +1,4 @@
-use super::local_file::LocalFile;
+﻿use super::local_file::LocalFile;
 use crate::{platform::unix::local_file::construct_file_list, ClipboardFile, CliprdrError};
 use hbb_common::{
     bytes::{BufMut, BytesMut},
@@ -269,3 +269,4 @@ pub fn sync_files(files: &[String]) -> Result<(), CliprdrError> {
 pub fn get_file_list_pdu() -> Vec<u8> {
     CLIP_FILES.lock().files_pdu.clone()
 }
+

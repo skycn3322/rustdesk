@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     fs::{self},
     io::{Cursor, Read},
     path::Path,
@@ -137,3 +137,4 @@ impl BinaryReader {
         }
     }
 }
+

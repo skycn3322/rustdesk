@@ -1,4 +1,4 @@
-#![allow(non_camel_case_types)]
+﻿#![allow(non_camel_case_types)]
 
 use hbb_common::libc::c_void;
 
@@ -281,3 +281,4 @@ pub struct xcb_get_geometry_reply_t {
     pub border_width: u16,
     pub pad0: [u8; 2],
 }
+

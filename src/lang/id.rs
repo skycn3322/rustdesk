@@ -1,4 +1,4 @@
-lazy_static::lazy_static! {
+﻿lazy_static::lazy_static! {
 pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [
         ("Status", "Status"),
@@ -731,3 +731,4 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("note-at-conn-end-tip", ""),
     ].iter().cloned().collect();
 }
+

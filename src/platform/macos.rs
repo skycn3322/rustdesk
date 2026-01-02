@@ -1,4 +1,4 @@
-// https://developer.apple.com/documentation/appkit/nscursor
+﻿// https://developer.apple.com/documentation/appkit/nscursor
 // https://github.com/servo/core-foundation-rs
 // https://github.com/rust-windowing/winit
 
@@ -1121,3 +1121,4 @@ fn get_bundle_id() -> Option<String> {
         Some(bundle_id_str)
     }
 }
+

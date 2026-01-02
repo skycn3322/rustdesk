@@ -1,4 +1,4 @@
-use hbb_common::log;
+﻿use hbb_common::log;
 use std::ffi::c_char;
 
 const LOG_LEVEL_TRACE: &[u8; 6] = b"trace\0";
@@ -32,3 +32,4 @@ pub(super) extern "C" fn plugin_log(level: *const c_char, msg: *const c_char) {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-use enigo::{Enigo, KeyboardControllable};
+﻿use enigo::{Enigo, KeyboardControllable};
 use std::thread;
 use std::time::Duration;
 
@@ -7,5 +7,6 @@ fn main() {
     let mut enigo = Enigo::new();
 
     // write text and select all
-    enigo.key_sequence_parse("{+UNICODE}{{Hello World!}} ❤️{-UNICODE}{+CTRL}a{-CTRL}");
+    enigo.key_sequence_parse("{+UNICODE}{{Hello World!}} 鉂わ笍{-UNICODE}{+CTRL}a{-CTRL}");
 }
+

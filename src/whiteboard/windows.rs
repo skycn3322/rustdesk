@@ -1,4 +1,4 @@
-use super::{
+﻿use super::{
     server::{Ripple, EVENT_PROXY},
     win_linux::{create_font_face, draw_text},
     Cursor, CustomEvent,
@@ -228,3 +228,4 @@ pub(super) fn create_event_loop() -> ResultType<()> {
         }
     });
 }
+

@@ -1,4 +1,4 @@
-use super::pasteboard_context::PasteObserverInfo;
+﻿use super::pasteboard_context::PasteObserverInfo;
 use fsevent::{self, StreamFlags};
 use hbb_common::{bail, log, ResultType};
 use std::{
@@ -177,3 +177,4 @@ impl PasteObserver {
         }
     }
 }
+

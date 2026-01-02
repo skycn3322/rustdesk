@@ -1,4 +1,4 @@
-use hbb_common::{bail, ResultType};
+﻿use hbb_common::{bail, ResultType};
 use tiny_skia::{FillRule, Paint, PathBuilder, PixmapMut, Point, Rect, Transform};
 use ttf_parser::Face;
 // A helper struct to bridge `ttf-parser` and `tiny-skia`.
@@ -178,3 +178,4 @@ pub(super) fn create_font_face() -> ResultType<Face<'static>> {
     let face = Face::parse(font_data, face_index)?;
     Ok(face)
 }
+

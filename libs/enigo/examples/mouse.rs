@@ -1,4 +1,4 @@
-use enigo::{Enigo, MouseButton, MouseControllable};
+﻿use enigo::{Enigo, MouseButton, MouseControllable};
 #[cfg(windows)]
 use winapi::um::winuser::WHEEL_DELTA;
 use std::thread;
@@ -52,3 +52,4 @@ fn main() {
         thread::sleep(wait_time);
     }
 }
+

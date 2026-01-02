@@ -1,4 +1,4 @@
-use super::*;
+﻿use super::*;
 use crate::common::SimpleCallOnReturn;
 #[cfg(target_os = "linux")]
 use crate::platform::linux::is_x11;
@@ -486,3 +486,4 @@ pub fn try_get_displays_(add_amyuni_headless: bool) -> ResultType<Vec<Display>> 
     }
     Ok(displays)
 }
+

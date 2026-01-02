@@ -1,4 +1,4 @@
-use super::{common_enum, is_name_equal, printer::get_printer_installed_on_port};
+﻿use super::{common_enum, is_name_equal, printer::get_printer_installed_on_port};
 use hbb_common::{bail, ResultType};
 use std::{io, ptr::null_mut};
 use winapi::{
@@ -126,3 +126,4 @@ pub fn check_delete_local_port(port: &PCWSTR) -> ResultType<()> {
     }
     Ok(())
 }
+

@@ -1,4 +1,4 @@
-#[cfg(target_os = "windows")]
+﻿#[cfg(target_os = "windows")]
 mod setup;
 #[cfg(target_os = "windows")]
 pub use setup::{
@@ -32,3 +32,4 @@ fn get_port_name(app_name: &str) -> Vec<u16> {
         .chain(Some(0))
         .collect()
 }
+

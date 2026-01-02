@@ -1,4 +1,4 @@
-use super::{BLOCK_SIZE, LDAP_EPOCH_DELTA};
+﻿use super::{BLOCK_SIZE, LDAP_EPOCH_DELTA};
 use crate::{
     platform::unix::{
         FLAGS_FD_ATTRIBUTES, FLAGS_FD_LAST_WRITE, FLAGS_FD_PROGRESSUI, FLAGS_FD_SIZE,
@@ -385,3 +385,4 @@ mod file_list_test {
         Ok(())
     }
 }
+

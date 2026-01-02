@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     common::{
         wayland,
         x11::{self},
@@ -137,3 +137,4 @@ impl Display {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-use super::*;
+﻿use super::*;
 use crate::hbbs_http::create_http_client;
 use crate::{
     flutter::{self, APP_TYPE_CM, APP_TYPE_MAIN, SESSIONS},
@@ -409,3 +409,4 @@ fn push_option_to_ui(channel: u16, id: &str, peer: &str, msg: &MsgToConfig, ui: 
         let _res = flutter::push_session_event(&peer, MSG_TO_UI_TYPE_PLUGIN_OPTION, v);
     }
 }
+

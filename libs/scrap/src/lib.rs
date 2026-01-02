@@ -1,4 +1,4 @@
-#[cfg(quartz)]
+﻿#[cfg(quartz)]
 extern crate block;
 #[macro_use]
 extern crate cfg_if;
@@ -24,3 +24,4 @@ pub mod dxgi;
 pub mod android;
 
 mod common;
+

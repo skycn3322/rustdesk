@@ -1,4 +1,4 @@
-use std::ptr;
+﻿use std::ptr;
 
 use hbb_common::libc::c_void;
 
@@ -73,3 +73,4 @@ impl Default for Config {
         }
     }
 }
+

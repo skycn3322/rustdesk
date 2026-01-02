@@ -1,4 +1,4 @@
-use super::{server::EVENT_PROXY, Cursor, CustomEvent, Ripple};
+﻿use super::{server::EVENT_PROXY, Cursor, CustomEvent, Ripple};
 use core_graphics::context::CGContextRef;
 use foreign_types::ForeignTypeRef;
 use hbb_common::{bail, log, ResultType};
@@ -321,3 +321,4 @@ pub(super) fn create_event_loop() -> ResultType<()> {
         }
     });
 }
+

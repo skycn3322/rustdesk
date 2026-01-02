@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     collections::HashMap,
     net::SocketAddr,
     sync::{Arc, Mutex, RwLock, Weak},
@@ -157,7 +157,7 @@ async fn accept_connection_(server: ServerPtr, socket: Stream, secure: bool) -> 
     drop(socket);
     // even we drop socket, below still may fail if not use reuse_addr,
     // there is TIME_WAIT before socket really released, so sometimes we
-    // see “Only one usage of each socket address is normally permitted” on windows sometimes,
+    // see 鈥淥nly one usage of each socket address is normally permitted鈥?on windows sometimes,
     let listener = new_listener(local_addr, true).await?;
     log::info!("Server listening on: {}", &listener.local_addr()?);
     if let Ok((stream, addr)) = timeout(CONNECT_TIMEOUT, listener.accept()).await? {
@@ -740,3 +740,4 @@ pub async fn stop_main_window_process() {
         }
     }
 }
+

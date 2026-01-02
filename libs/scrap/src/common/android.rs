@@ -1,4 +1,4 @@
-use crate::android::ffi::*;
+﻿use crate::android::ffi::*;
 use crate::{Frame, Pixfmt};
 use lazy_static::lazy_static;
 use serde_json::Value;
@@ -187,3 +187,4 @@ pub fn is_start() -> Option<bool> {
     let res = call_main_service_get_by_name("is_start").ok()?;
     Some(res == "true")
 }
+

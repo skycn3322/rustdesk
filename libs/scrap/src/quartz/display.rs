@@ -1,4 +1,4 @@
-use std::mem;
+﻿use std::mem;
 
 use super::ffi::*;
 
@@ -85,3 +85,4 @@ impl Display {
         unsafe { CGDisplayBounds(self.0) }
     }
 }
+

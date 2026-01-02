@@ -1,4 +1,4 @@
-mod cs;
+﻿mod cs;
 
 use super::filetype::FileDescription;
 use crate::{ClipboardFile, CliprdrError};
@@ -223,3 +223,4 @@ impl FuseContext {
             .collect())
     }
 }
+

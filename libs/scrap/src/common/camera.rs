@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     io,
     sync::{Arc, Mutex},
 };
@@ -284,3 +284,4 @@ impl TraitCapturer for CameraCapturer {
     #[cfg(feature = "vram")]
     fn set_output_texture(&mut self, _texture: bool) {}
 }
+

@@ -1,4 +1,4 @@
-use super::{linux::*, ResultType};
+﻿use super::{linux::*, ResultType};
 use crate::client::{
     LOGIN_MSG_DESKTOP_NO_DESKTOP, LOGIN_MSG_DESKTOP_SESSION_ANOTHER_USER,
     LOGIN_MSG_DESKTOP_SESSION_NOT_READY, LOGIN_MSG_DESKTOP_XORG_NOT_FOUND,
@@ -738,3 +738,4 @@ fn pam_get_service_name() -> String {
         "gdm".to_owned()
     }
 }
+

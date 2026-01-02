@@ -1,4 +1,4 @@
-use core::slice;
+﻿use core::slice;
 use hbb_common::{
     allow_err,
     anyhow::anyhow,
@@ -990,3 +990,4 @@ pub struct FrameInfo {
     width: usize,
     height: usize,
 }
+

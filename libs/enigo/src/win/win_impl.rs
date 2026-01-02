@@ -1,4 +1,4 @@
-use self::winapi::ctypes::c_int;
+﻿use self::winapi::ctypes::c_int;
 use self::winapi::shared::{basetsd::ULONG_PTR, minwindef::*, windef::*};
 use self::winapi::um::winbase::*;
 use self::winapi::um::winuser::*;
@@ -465,3 +465,4 @@ impl Enigo {
         unsafe { VkKeyScanExW(chr as _, LAYOUT) as _ }
     }
 }
+

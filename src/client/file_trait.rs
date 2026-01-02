@@ -1,4 +1,4 @@
-use hbb_common::{fs, log, message_proto::*};
+﻿use hbb_common::{fs, log, message_proto::*};
 
 use super::{Data, Interface};
 
@@ -191,3 +191,4 @@ pub trait FileManager: Interface {
         self.send(Data::RenameFile((act_id, path, new_name, is_remote)));
     }
 }
+

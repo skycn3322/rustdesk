@@ -1,4 +1,4 @@
-use super::{FLAGS_FD_ATTRIBUTES, FLAGS_FD_LAST_WRITE, FLAGS_FD_UNIX_MODE, LDAP_EPOCH_DELTA};
+﻿use super::{FLAGS_FD_ATTRIBUTES, FLAGS_FD_LAST_WRITE, FLAGS_FD_UNIX_MODE, LDAP_EPOCH_DELTA};
 use crate::CliprdrError;
 use hbb_common::{
     bytes::{Buf, Bytes},
@@ -186,3 +186,4 @@ impl FileDescription {
         Ok(files)
     }
 }
+

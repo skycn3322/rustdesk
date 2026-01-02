@@ -1,4 +1,4 @@
-#[cfg(not(any(target_os = "android", target_os = "ios")))]
+﻿#[cfg(not(any(target_os = "android", target_os = "ios")))]
 use crate::clipboard::{update_clipboard, ClipboardSide};
 use hbb_common::{message_proto::*, ResultType};
 use std::sync::Mutex;
@@ -97,3 +97,4 @@ pub fn set_screenshot(data: bytes::Bytes) {
 pub fn handle_screenshot(action: String) -> String {
     SCREENSHOT.lock().unwrap().handle_screenshot(action)
 }
+

@@ -1,4 +1,4 @@
-use enigo::{Enigo, Key, KeyboardControllable};
+﻿use enigo::{Enigo, Key, KeyboardControllable};
 use std::thread;
 use std::time::Duration;
 
@@ -15,3 +15,4 @@ fn main() {
     enigo.key_up(Key::Layout('-'));
     enigo.key_up(Key::Shift);
 }
+

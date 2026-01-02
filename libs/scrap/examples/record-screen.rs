@@ -1,4 +1,4 @@
-extern crate docopt;
+﻿extern crate docopt;
 extern crate quest;
 extern crate repng;
 extern crate scrap;
@@ -118,7 +118,7 @@ fn main() -> io::Result<()> {
     thread::spawn({
         let stop = stop.clone();
         move || {
-            let _ = quest::ask("Recording! Press ⏎ to stop.");
+            let _ = quest::ask("Recording! Press 鈴?to stop.");
             let _ = quest::text();
             stop.store(true, Ordering::Release);
         }
@@ -158,3 +158,4 @@ fn main() -> io::Result<()> {
 
     Ok(())
 }
+

@@ -1,4 +1,4 @@
-use std::time::Duration;
+﻿use std::time::Duration;
 
 use scrap::{Frame, TraitPixelBuffer};
 
@@ -56,3 +56,4 @@ fn main() {
         }
     }
 }
+

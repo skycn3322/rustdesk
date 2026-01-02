@@ -1,4 +1,4 @@
-use serde_derive::{Deserialize, Serialize};
+﻿use serde_derive::{Deserialize, Serialize};
 
 mod client;
 mod server;
@@ -39,3 +39,4 @@ pub struct Cursor {
     pub btns: i32,
     pub text: String,
 }
+

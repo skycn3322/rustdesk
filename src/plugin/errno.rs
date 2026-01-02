@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+﻿#![allow(dead_code)]
 
 pub const ERR_SUCCESS: i32 = 0;
 
@@ -48,3 +48,4 @@ pub const ERR_PLUGIN_HANDLE_BASE: i32 = 30000;
 pub const EER_CALL_FAILED: i32 = 30021;
 pub const ERR_PEER_ON_FAILED: i32 = 40012;
 pub const ERR_PEER_OFF_FAILED: i32 = 40012;
+

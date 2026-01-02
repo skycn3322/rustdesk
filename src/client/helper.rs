@@ -1,4 +1,4 @@
-use hbb_common::{
+﻿use hbb_common::{
     get_time,
     message_proto::{Message, VoiceCallRequest, VoiceCallResponse},
 };
@@ -35,3 +35,4 @@ pub fn new_voice_call_response(request_timestamp: i64, accepted: bool) -> Messag
     msg.set_voice_call_response(resp);
     msg
 }
+

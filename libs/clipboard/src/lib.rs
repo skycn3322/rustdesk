@@ -1,4 +1,4 @@
-use std::sync::{Arc, Mutex, RwLock};
+﻿use std::sync::{Arc, Mutex, RwLock};
 
 #[cfg(any(
     target_os = "windows",
@@ -296,3 +296,4 @@ mod tests {
     //     super::cliprdr_run();
     // }
 }
+

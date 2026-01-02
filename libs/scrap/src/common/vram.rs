@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     collections::{HashMap, HashSet},
     ffi::c_void,
     sync::{Arc, Mutex},
@@ -402,3 +402,4 @@ pub(crate) fn check_available_vram() -> (Vec<FeatureContext>, Vec<DecodeContext>
         available.serialize().unwrap_or_default(),
     )
 }
+

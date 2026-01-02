@@ -1,4 +1,4 @@
-use crate::CodecFormat;
+﻿use crate::CodecFormat;
 #[cfg(feature = "hwcodec")]
 use hbb_common::anyhow::anyhow;
 use hbb_common::{
@@ -421,3 +421,4 @@ impl Drop for HwRecorder {
         self.ctx.tx.as_ref().map(|tx| tx.send(state));
     }
 }
+

@@ -1,4 +1,4 @@
-use super::{
+﻿use super::{
     driver::{get_installed_driver_version, install_driver, uninstall_driver},
     port::{check_add_local_port, check_delete_local_port},
     printer::{add_printer, delete_printer},
@@ -92,3 +92,4 @@ pub fn uninstall_printer(app_name: &str) {
     allow_err!(uninstall_driver(&rd_printer_driver_name));
     allow_err!(check_delete_local_port(&rd_printer_port));
 }
+

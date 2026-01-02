@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+﻿#![allow(dead_code)]
 #![allow(non_camel_case_types)]
 #![allow(unused_variables)]
 #![allow(non_snake_case)]
@@ -213,3 +213,4 @@ extern "C" {
     pub fn GetLastMsg() -> PCHAR;
     pub fn SetPrintErrMsg(b: BOOL);
 }
+

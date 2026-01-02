@@ -1,4 +1,4 @@
-#[cfg(any(target_os = "android", target_os = "ios"))]
+﻿#[cfg(any(target_os = "android", target_os = "ios"))]
 use hbb_common::password_security;
 use hbb_common::{
     allow_err,
@@ -1541,3 +1541,4 @@ pub fn clear_trusted_devices() {
 pub fn max_encrypt_len() -> usize {
     hbb_common::config::ENCRYPT_MAX_LEN
 }
+

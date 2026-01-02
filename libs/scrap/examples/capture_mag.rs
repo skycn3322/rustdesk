@@ -1,4 +1,4 @@
-extern crate repng;
+﻿extern crate repng;
 extern crate scrap;
 
 use scrap::Display;
@@ -122,3 +122,4 @@ fn record(i: usize) {
         println!("Image saved to `{}`.", name);
     }
 }
+

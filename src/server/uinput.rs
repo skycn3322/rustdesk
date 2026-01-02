@@ -1,4 +1,4 @@
-use crate::ipc::{self, new_listener, Connection, Data, DataKeyboard, DataMouse};
+﻿use crate::ipc::{self, new_listener, Connection, Data, DataKeyboard, DataMouse};
 use enigo::{Key, KeyboardControllable, MouseButton, MouseControllable};
 use evdev::{
     uinput::{VirtualDevice, VirtualDeviceBuilder},
@@ -1111,3 +1111,4 @@ mod mouce {
         }
     }
 }
+

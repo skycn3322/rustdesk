@@ -1,4 +1,4 @@
-use super::{common_enum, get_wstr_bytes, is_name_equal};
+﻿use super::{common_enum, get_wstr_bytes, is_name_equal};
 use hbb_common::{bail, log, ResultType};
 use std::{io, ptr::null_mut, time::Duration};
 use winapi::{
@@ -200,3 +200,4 @@ pub fn install_driver(name: &PCWSTR, inf: LPCWSTR) -> ResultType<()> {
 
     Ok(())
 }
+

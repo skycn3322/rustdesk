@@ -1,4 +1,4 @@
-// both soundio and cpal use wasapi on windows and coreaudio on mac, they do not support loopback.
+﻿// both soundio and cpal use wasapi on windows and coreaudio on mac, they do not support loopback.
 // libpulseaudio support loopback because pulseaudio is a standalone audio service with some
 // configuration, but need to install the library and start the service on OS, not a good choice.
 // windows: https://docs.microsoft.com/en-us/windows/win32/coreaudio/loopback-recording
@@ -525,3 +525,4 @@ fn send_f32(data: &[f32], encoder: &mut Encoder, sp: &GenericService) {
         Err(_) => {}
     }
 }
+

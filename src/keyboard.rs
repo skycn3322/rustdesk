@@ -1,4 +1,4 @@
-#[cfg(feature = "flutter")]
+﻿#[cfg(feature = "flutter")]
 use crate::flutter;
 #[cfg(target_os = "windows")]
 use crate::platform::windows::{get_char_from_vk, get_unicode_from_vk};
@@ -271,7 +271,7 @@ fn start_grab_loop() {
     #[cfg(any(target_os = "windows", target_os = "macos"))]
     std::thread::spawn(move || {
         let try_handle_keyboard = move |event: Event, key: Key, is_press: bool| -> Option<Event> {
-            // fix #2211：CAPS LOCK don't work
+            // fix #2211锛欳APS LOCK don't work
             if key == Key::CapsLock || key == Key::NumLock {
                 return Some(event);
             }
@@ -804,7 +804,7 @@ pub fn legacy_keyboard_mode(event: &Event, mut key_event: KeyEvent) -> Vec<KeyEv
             }
             _ => '\0',
         };
-        if chr == '·' {
+        if chr == '路' {
             // special for Chinese
             chr = '`';
         }
@@ -1234,3 +1234,4 @@ pub mod input_source {
         ]
     }
 }
+

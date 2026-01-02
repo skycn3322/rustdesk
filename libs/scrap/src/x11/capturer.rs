@@ -1,4 +1,4 @@
-use super::ffi::*;
+﻿use super::ffi::*;
 use super::Display;
 use hbb_common::libc;
 use std::{io, ptr, slice};
@@ -113,3 +113,4 @@ impl Drop for Capturer {
         }
     }
 }
+

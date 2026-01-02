@@ -1,4 +1,4 @@
-use super::{Cursor, CustomEvent};
+﻿use super::{Cursor, CustomEvent};
 use crate::{
     ipc::{self, Data},
     CHILD_PROCESS,
@@ -256,3 +256,4 @@ async fn start_whiteboard_() -> ResultType<()> {
     );
     Ok(())
 }
+

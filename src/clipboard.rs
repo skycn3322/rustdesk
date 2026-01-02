@@ -1,4 +1,4 @@
-#[cfg(not(target_os = "android"))]
+﻿#[cfg(not(target_os = "android"))]
 use arboard::{ClipboardData, ClipboardFormat};
 use hbb_common::{bail, log, message_proto::*, ResultType};
 use std::{
@@ -883,3 +883,4 @@ pub mod clipboard_listener {
         h
     }
 }
+

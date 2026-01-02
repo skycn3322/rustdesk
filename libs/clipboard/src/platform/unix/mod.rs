@@ -1,4 +1,4 @@
-use dashmap::DashMap;
+﻿use dashmap::DashMap;
 use lazy_static::lazy_static;
 
 mod filetype;
@@ -56,3 +56,4 @@ lazy_static! {
 pub fn get_local_format(remote_id: i32) -> Option<String> {
     REMOTE_FORMAT_MAP.get(&remote_id).map(|s| s.clone())
 }
+

@@ -1,4 +1,4 @@
-use hbb_common::{bail, libc, log, ResultType};
+﻿use hbb_common::{bail, libc, log, ResultType};
 #[cfg(target_os = "windows")]
 use std::env;
 use std::{
@@ -186,3 +186,4 @@ fn free_c_ptr(p: *mut c_void) {
         }
     }
 }
+

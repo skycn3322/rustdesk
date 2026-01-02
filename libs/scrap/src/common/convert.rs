@@ -1,4 +1,4 @@
-#![allow(non_camel_case_types)]
+﻿#![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
 #![allow(improper_ctypes)]
@@ -234,3 +234,4 @@ pub fn convert(captured: &PixelBuffer, pixfmt: crate::Pixfmt, dst: &mut Vec<u8>)
     }
     Ok(())
 }
+

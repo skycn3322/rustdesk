@@ -1,4 +1,4 @@
-#[cfg(windows)]
+﻿#[cfg(windows)]
 use dylib_virtual_display::win10::{idd, DRIVER_INSTALL_PATH};
 
 #[cfg(windows)]
@@ -186,3 +186,4 @@ fn main() {
         }
     }
 }
+

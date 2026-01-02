@@ -1,4 +1,4 @@
-use crate::{common::TraitCapturer, x11, Frame, Pixfmt, TraitPixelBuffer};
+﻿use crate::{common::TraitCapturer, x11, Frame, Pixfmt, TraitPixelBuffer};
 use std::{io, time::Duration};
 
 pub struct Capturer(x11::Capturer);
@@ -137,3 +137,4 @@ impl Display {
         self.0.server().get_shm_status()
     }
 }
+

@@ -1,4 +1,4 @@
-use super::{cstr_to_string, str_to_cstr_ret};
+﻿use super::{cstr_to_string, str_to_cstr_ret};
 use hbb_common::{allow_err, bail, config::Config as HbbConfig, lazy_static, log, ResultType};
 use serde_derive::{Deserialize, Serialize};
 use std::{
@@ -361,3 +361,4 @@ pub(super) extern "C" fn cb_get_conf(
     }
     ptr::null()
 }
+

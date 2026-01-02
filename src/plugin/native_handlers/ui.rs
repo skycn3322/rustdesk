@@ -1,4 +1,4 @@
-use std::{collections::HashMap, ffi::c_void, os::raw::c_int};
+﻿use std::{collections::HashMap, ffi::c_void, os::raw::c_int};
 
 use serde_json::json;
 
@@ -141,3 +141,4 @@ impl PluginNativeUIHandler {
         );
     }
 }
+

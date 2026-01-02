@@ -1,4 +1,4 @@
-use docopt::Docopt;
+﻿use docopt::Docopt;
 use hbb_common::{
     env_logger::{init_from_env, Env, DEFAULT_FILTER_ENV},
     log,
@@ -329,3 +329,4 @@ mod hw {
         );
     }
 }
+

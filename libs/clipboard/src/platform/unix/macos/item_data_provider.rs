@@ -1,4 +1,4 @@
-use super::pasteboard_context::{PasteObserverInfo, TEMP_FILE_PREFIX};
+﻿use super::pasteboard_context::{PasteObserverInfo, TEMP_FILE_PREFIX};
 use objc2::{
     declare_class, msg_send_id, mutability,
     rc::Id,
@@ -75,3 +75,4 @@ pub(super) fn create_pasteboard_file_url_provider(
     let provider: Id<PasteboardFileUrlProvider> = unsafe { msg_send_id![super(provider), init] };
     provider
 }
+

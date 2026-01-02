@@ -1,4 +1,4 @@
-use super::CustomEvent;
+﻿use super::CustomEvent;
 use crate::ipc::{new_listener, Connection, Data};
 #[cfg(any(target_os = "windows", target_os = "macos"))]
 use hbb_common::tokio::sync::mpsc::unbounded_channel;
@@ -169,3 +169,4 @@ impl Ripple {
         (radius, alpha)
     }
 }
+

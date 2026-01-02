@@ -1,4 +1,4 @@
-pub use self::vpxcodec::*;
+﻿pub use self::vpxcodec::*;
 use hbb_common::{
     bail, log,
     message_proto::{video_frame, Chroma, VideoFrame},
@@ -545,3 +545,4 @@ pub fn screen_size() -> (u16, u16, u16) {
 pub fn is_start() -> Option<bool> {
     android::is_start()
 }
+

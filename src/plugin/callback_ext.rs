@@ -1,4 +1,4 @@
-// External support for callback.
+﻿// External support for callback.
 // 1. Support block input for some plugins.
 // -----------------------------------------------------------------------------
 
@@ -42,3 +42,4 @@ pub(super) fn ext_support_callback(
         ),
     }
 }
+

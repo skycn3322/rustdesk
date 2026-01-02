@@ -1,4 +1,4 @@
-use crate::{common::do_check_software_update, hbbs_http::create_http_client_with_url};
+﻿use crate::{common::do_check_software_update, hbbs_http::create_http_client_with_url};
 use hbb_common::{bail, config, log, ResultType};
 use std::{
     io::Write,
@@ -251,3 +251,4 @@ pub fn get_download_file_from_url(url: &str) -> Option<PathBuf> {
     let filename = url.split('/').last()?;
     Some(std::env::temp_dir().join(filename))
 }
+

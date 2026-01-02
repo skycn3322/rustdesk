@@ -1,4 +1,4 @@
-#[cfg(any(target_os = "windows", target_os = "macos"))]
+﻿#[cfg(any(target_os = "windows", target_os = "macos"))]
 use crate::client::translate;
 #[cfg(not(debug_assertions))]
 #[cfg(not(any(target_os = "android", target_os = "ios")))]
@@ -806,3 +806,4 @@ fn is_root() -> bool {
     #[allow(unreachable_code)]
     crate::platform::is_root()
 }
+

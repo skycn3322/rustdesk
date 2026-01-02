@@ -1,4 +1,4 @@
-fn main() {
+﻿fn main() {
     #[cfg(windows)]
     {
         use std::io::Write;
@@ -18,3 +18,4 @@ fn main() {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     common::CheckTestNatType,
     privacy_mode::PrivacyModeState,
     ui_interface::{get_local_option, set_local_option},
@@ -816,7 +816,7 @@ pub async fn start_pa() {
                             let mut buf: Vec<u8> = vec![0; AUDIO_DATA_SIZE_U8];
                             match psimple::Simple::new(
                                 None,                             // Use the default server
-                                &crate::get_app_name(),           // Our application’s name
+                                &crate::get_app_name(),           // Our application鈥檚 name
                                 pulse::stream::Direction::Record, // We want a record stream
                                 Some(&device),                    // Use the default device
                                 "record",                         // Description of our stream
@@ -1461,3 +1461,4 @@ mod test {
         assert!(std::mem::size_of::<Data>() <= 96);
     }
 }
+

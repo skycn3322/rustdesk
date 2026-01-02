@@ -1,4 +1,4 @@
-use core_graphics;
+﻿use core_graphics;
 // TODO(dustin): use only the things i need
 
 use self::core_graphics::display::*;
@@ -811,3 +811,4 @@ fn get_map(name: &str, layout: *const u8) -> Map<char, CGKeyCode> {
     map
 }
 unsafe impl Send for Enigo {}
+

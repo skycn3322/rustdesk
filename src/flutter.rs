@@ -1,4 +1,4 @@
-use crate::{
+﻿use crate::{
     client::*,
     flutter_ffi::{EventToUI, SessionID},
     ui_session_interface::{io_loop, InvokeUiSession, Session},
@@ -2361,3 +2361,4 @@ pub(super) mod async_tasks {
         );
     }
 }
+

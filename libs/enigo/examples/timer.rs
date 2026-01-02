@@ -1,4 +1,4 @@
-use enigo::{Enigo, Key, KeyboardControllable};
+﻿use enigo::{Enigo, Key, KeyboardControllable};
 use std::thread;
 use std::time::Duration;
 use std::time::Instant;
@@ -10,7 +10,7 @@ fn main() {
     let now = Instant::now();
 
     // write text
-    enigo.key_sequence("Hello World! ❤️");
+    enigo.key_sequence("Hello World! 鉂わ笍");
 
     let time = now.elapsed();
     println!("{:?}", time);
@@ -20,3 +20,4 @@ fn main() {
     enigo.key_click(Key::Layout('a'));
     enigo.key_up(Key::Control);
 }
+

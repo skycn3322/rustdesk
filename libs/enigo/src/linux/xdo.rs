@@ -1,4 +1,4 @@
-use crate::{Key, KeyboardControllable, MouseButton, MouseControllable};
+﻿use crate::{Key, KeyboardControllable, MouseButton, MouseControllable};
 
 use hbb_common::libc::{c_char, c_int, c_void, useconds_t};
 use std::{borrow::Cow, ffi::CString, ptr};
@@ -403,3 +403,4 @@ impl KeyboardControllable for EnigoXdo {
         crate::dsl::eval(self, sequence)
     }
 }
+

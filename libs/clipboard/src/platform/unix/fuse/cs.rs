@@ -1,4 +1,4 @@
-//! fuse server implement
+﻿//! fuse server implement
 //! we use fuse to provide file readers, warping data transfer to file interfaces
 //!
 //! # Name encoding
@@ -915,7 +915,7 @@ mod fuse_test {
                 "folder0/file1".to_string(),
                 "folder1".to_string(),
                 "folder1/file2".to_string(),
-                "folder1/📄3".to_string(),
+                "folder1/馃搫3".to_string(),
             )
         } else {
             (
@@ -924,7 +924,7 @@ mod fuse_test {
                 format!("{}/folder0/file1", prefix),
                 format!("{}/folder1", prefix),
                 format!("{}/folder1/file2", prefix),
-                format!("{}/folder1/📄3", prefix),
+                format!("{}/folder1/馃搫3", prefix),
             )
         };
         let folder0 = desc_gen(&d0_path, FileType::Directory);
@@ -952,7 +952,7 @@ mod fuse_test {
         assert_eq!(tree_list[3].name, "file1");
         assert_eq!(tree_list[4].name, "folder1");
         assert_eq!(tree_list[5].name, "file2");
-        assert_eq!(tree_list[6].name, "📄3");
+        assert_eq!(tree_list[6].name, "馃搫3");
 
         assert_eq!(tree_list[0].children, vec![2, 5]);
         assert_eq!(tree_list[1].children, vec![3, 4]);
@@ -992,8 +992,8 @@ mod fuse_test {
         build_single_file("/");
         build_single_file("test");
         build_single_file("/test");
-        build_single_file("🗂");
-        build_single_file("/🗂");
+        build_single_file("馃梻");
+        build_single_file("/馃梻");
     }
 
     #[test]
@@ -1003,8 +1003,9 @@ mod fuse_test {
         build_tree("test");
         build_tree("/test");
         build_tree("/test/test");
-        build_tree("🗂");
-        build_tree("/🗂");
-        build_tree("🗂/test");
+        build_tree("馃梻");
+        build_tree("/馃梻");
+        build_tree("馃梻/test");
     }
 }
+

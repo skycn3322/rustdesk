@@ -1,4 +1,4 @@
-// 1. Check update.
+﻿// 1. Check update.
 // 2. Install or uninstall.
 
 use super::{desc::Meta as PluginMeta, ipc::InstallStatus, *};
@@ -598,3 +598,4 @@ pub(super) mod install {
         send_install_status(id, InstallStatus::Finished);
     }
 }
+

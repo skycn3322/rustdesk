@@ -1,4 +1,4 @@
-use crate::{quartz, Frame, Pixfmt};
+﻿use crate::{quartz, Frame, Pixfmt};
 use std::marker::PhantomData;
 use std::sync::{Arc, Mutex, TryLockError};
 use std::{io, mem};
@@ -149,3 +149,4 @@ impl Display {
         self.0.is_primary()
     }
 }
+

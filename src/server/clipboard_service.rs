@@ -1,4 +1,4 @@
-use super::*;
+﻿use super::*;
 #[cfg(not(target_os = "android"))]
 use crate::clipboard::clipboard_listener;
 #[cfg(not(target_os = "android"))]
@@ -272,3 +272,4 @@ fn run(sp: EmptyExtraFieldService) -> ResultType<()> {
     CLIPBOARD_SERVICE_OK.store(false, Ordering::SeqCst);
     Ok(())
 }
+

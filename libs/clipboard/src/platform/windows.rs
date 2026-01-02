@@ -1,4 +1,4 @@
-//! windows implementation
+﻿//! windows implementation
 #![allow(dead_code)]
 #![allow(non_camel_case_types)]
 #![allow(unused_variables)]
@@ -1325,3 +1325,4 @@ extern "C" fn client_file_contents_response(
         }
     }
 }
+

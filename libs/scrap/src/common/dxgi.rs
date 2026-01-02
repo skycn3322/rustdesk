@@ -1,4 +1,4 @@
-#[cfg(feature = "vram")]
+﻿#[cfg(feature = "vram")]
 use crate::AdapterDevice;
 use crate::{common::TraitCapturer, dxgi, Frame, Pixfmt};
 use std::{
@@ -262,3 +262,4 @@ impl TraitCapturer for CapturerMag {
     #[cfg(feature = "vram")]
     fn set_output_texture(&mut self, _texture: bool) {}
 }
+

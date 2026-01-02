@@ -1,4 +1,4 @@
-use native_windows_gui as nwg;
+﻿use native_windows_gui as nwg;
 use nwg::NativeUi;
 use std::cell::RefCell;
 
@@ -230,3 +230,4 @@ pub fn setup() {
         }
     });
 }
+

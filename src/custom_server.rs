@@ -1,4 +1,4 @@
-use hbb_common::{
+﻿use hbb_common::{
     bail,
     base64::{engine::general_purpose::URL_SAFE_NO_PAD, Engine as _},
     sodiumoxide::crypto::sign,
@@ -217,3 +217,4 @@ mod test {
                 .unwrap(), lic);
     }
 }
+

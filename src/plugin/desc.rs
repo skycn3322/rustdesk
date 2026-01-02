@@ -1,4 +1,4 @@
-use hbb_common::ResultType;
+﻿use hbb_common::ResultType;
 use serde_derive::{Deserialize, Serialize};
 use serde_json;
 use std::collections::HashMap;
@@ -98,3 +98,4 @@ impl Desc {
         &self.listen_events
     }
 }
+

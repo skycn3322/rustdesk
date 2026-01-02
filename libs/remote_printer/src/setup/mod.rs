@@ -1,4 +1,4 @@
-#![allow(non_snake_case)]
+﻿#![allow(non_snake_case)]
 
 use hbb_common::{bail, ResultType};
 use std::{io, ptr::null_mut};
@@ -99,3 +99,4 @@ fn common_enum<T, R: Sized>(
 
     Ok(on_no_data())
 }
+

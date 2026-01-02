@@ -1,4 +1,4 @@
-use std::{
+﻿use std::{
     collections::HashMap,
     sync::{Arc, Mutex},
     time::Duration,
@@ -304,3 +304,4 @@ fn handle_config_options(config_options: HashMap<String, String>) {
 pub fn is_pro() -> bool {
     PRO.lock().unwrap().clone()
 }
+

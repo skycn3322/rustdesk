@@ -1,4 +1,4 @@
-use super::{common_enum, get_wstr_bytes, is_name_equal};
+﻿use super::{common_enum, get_wstr_bytes, is_name_equal};
 use hbb_common::{bail, ResultType};
 use std::{io, ptr::null_mut};
 use winapi::{
@@ -159,3 +159,4 @@ pub fn delete_printer(name: &PCWSTR) -> ResultType<()> {
 
     Ok(())
 }
+

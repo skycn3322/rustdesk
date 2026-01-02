@@ -1,4 +1,4 @@
-#[macro_export]
+﻿#[macro_export]
 macro_rules! return_if_not_method {
     ($call: ident, $prefix: ident) => {
         if $call.starts_with($prefix) {
@@ -25,3 +25,4 @@ macro_rules! define_method_prefix {
         }
     };
 }
+

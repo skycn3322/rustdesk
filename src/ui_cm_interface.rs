@@ -1,4 +1,4 @@
-#[cfg(not(any(target_os = "android", target_os = "ios")))]
+﻿#[cfg(not(any(target_os = "android", target_os = "ios")))]
 use crate::ipc::Connection;
 #[cfg(not(any(target_os = "ios")))]
 use crate::ipc::{self, Data};
@@ -1106,3 +1106,4 @@ pub fn quit_cm() {
     CLIENTS.write().unwrap().clear();
     crate::platform::quit_gui();
 }
+

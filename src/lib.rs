@@ -1,4 +1,4 @@
-mod keyboard;
+﻿mod keyboard;
 /// cbindgen:ignore
 pub mod platform;
 #[cfg(not(any(target_os = "android", target_os = "ios")))]
@@ -76,3 +76,4 @@ pub mod privacy_mode;
 pub mod virtual_display_manager;
 
 mod kcp_stream;
+

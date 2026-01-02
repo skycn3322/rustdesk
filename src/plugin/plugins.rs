@@ -1,4 +1,4 @@
-use super::{desc::Desc, errno::*, *};
+﻿use super::{desc::Desc, errno::*, *};
 #[cfg(not(debug_assertions))]
 use crate::common::is_server;
 use crate::flutter;
@@ -657,3 +657,4 @@ pub(super) fn get_version(id: &str) -> Option<String> {
         .get(id)
         .map(|info| info.desc.meta().version.clone())
 }
+

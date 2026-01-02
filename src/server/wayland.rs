@@ -1,4 +1,4 @@
-use super::*;
+﻿use super::*;
 use hbb_common::{allow_err, anyhow, platform::linux::DISTRO};
 use scrap::{
     is_cursor_embedded, set_map_err,
@@ -300,3 +300,4 @@ pub fn common_get_error() -> String {
     }
     return "".to_owned();
 }
+

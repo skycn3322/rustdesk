@@ -1,4 +1,4 @@
-#![allow(non_camel_case_types)]
+﻿#![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
 #![allow(improper_ctypes)]
@@ -579,3 +579,4 @@ impl Drop for Image {
 }
 
 unsafe impl Send for aom_codec_ctx_t {}
+

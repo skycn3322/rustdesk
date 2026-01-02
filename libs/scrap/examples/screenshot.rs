@@ -1,4 +1,4 @@
-extern crate repng;
+﻿extern crate repng;
 extern crate scrap;
 
 use std::fs::File;
@@ -139,3 +139,4 @@ fn record(i: usize) {
         break;
     }
 }
+
